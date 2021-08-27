@@ -1,30 +1,4 @@
-<div id="page-wrap">
-  <div class="container">
-    <div class="top">
-      <h1 class="title-name">
-          <%= link_to root_path do %>
-            <%= image_tag "logo.png", style:'width:150px;'%>
-          <% end %>
-      </h1>
-    </div>
-    <nav>
-      <ul class="group">
-        <li class="active"><%= link_to 'a propos', '/apropos'%></li>
-        <li class="active"><%= link_to 'broderie', '/broderie' %></li>
-        <li class="active"><%= link_to 'tapisserie', '/tapisserie' %></li>
-        <li class="active"><%= link_to 'contact', '/contact'%></li>
-
-      </ul>
-    </nav>
-    <section id="main-content">
-      <div id="guts">
-
-      </div>
-    </section>
-  </div>
-</div>
-<script>
-  const nav = () => {
+const nav = () => {
   $(function() {
 
       var newHash      = "",
@@ -64,4 +38,5 @@
 
   });
 }
-</script>
+
+export {nav};
