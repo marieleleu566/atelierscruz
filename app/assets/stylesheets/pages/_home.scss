@@ -59,6 +59,8 @@
   font-size: 18px;
   font-family: 'Raleway';
   color:#041E78;
+  border-bottom: 3px solid #041E78;
+  margin-bottom: 0px;
   li {
     padding: 10px 40px 10px 0px;
   }
@@ -105,5 +107,36 @@
 }
 
 .home-page {
+  margin-top: 30px;
+  border-top: 1px solid #041E78;
   padding: 30px 100px;
 }
+
+.banner {
+  height: 555px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.broderie {
+  font-family: 'Raleway';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    margin-right: 30px;
+    height: 500px;
+  }
+}
+
+.tapisserie {
+  font-family: 'Raleway';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    margin-left: 30px;
+    height: 500px;
+  }
+}
+
