@@ -1,25 +1,38 @@
 <div id="page-wrap">
-  <div class="container">
-    <div class="top">
-      <h1 class="title-name">
+  <div class="top">
+    <div class="title-name">
+        <div class="contact-icons">
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        </div>
+        <div class="logo">
           <%= link_to root_path do %>
             <%= image_tag "logo.png", style:'width:150px;'%>
           <% end %>
-      </h1>
+        </div>
+        <div class="contact-btn-div">
+          <div class="contact-btn">
+            <a href="mailto:sophieleleu@mac.com">contactez</a>
+          </div>
+        </div>
     </div>
-    <nav>
-      <ul class="group">
-        <li class="active"><%= link_to 'a propos', '/apropos'%></li>
-        <li class="active"><%= link_to 'broderie', '/broderie' %></li>
-        <li class="active"><%= link_to 'tapisserie', '/tapisserie' %></li>
-        <li class="active"><%= link_to 'contact', '/contact'%></li>
-      </ul>
-    </nav>
-    <section id="main-content">
-      <div id="guts">
-        <h1>hi</h1>
-      </div>
-    </section>
   </div>
+  <nav>
+    <ul class="group">
+      <li class="active"><%= link_to 'a propos', '/apropos'%></li>
+      <li class="active"><%= link_to 'broderie', '/broderie' %></li>
+      <li class="active"><%= link_to 'tapisserie', '/tapisserie' %></li>
+      <li class="active"><%= link_to 'contact', '/contact'%></li>
+    </ul>
+  </nav>
+  <section id="main-content">
+    <div id="guts">
+      <div class="container">
+        <div class="home-page">
+
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
