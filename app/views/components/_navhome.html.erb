@@ -1,0 +1,28 @@
+<div class="nav-menu">
+  <%= link_to "/", class: "navbar-brand-home" do %>
+    <%= image_tag "logo.png" %>
+  <% end %>
+  <div class="navigation">
+  </div>
+  <div style='width:140px;'></div>
+  <div id="burger-menu">
+  <span></span>
+  </div>
+  <div id="menu">
+      <ul>
+        <li class="nav-item">
+        <%= link_to "Broderie", "/broderie", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Tapisserie", "/tapisserie", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "A Propos", "/apropos", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Contact", "/contact", class: "nav-link" %>
+      </li>
+      </ul>
+  </div>
+</div>
+

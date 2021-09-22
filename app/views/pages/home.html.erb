@@ -1,48 +1,30 @@
-<div id="page-wrap">
-  <div class="top">
-    <div class="title-name">
-        <div class="contact-icons">
-          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-        </div>
-        <div class="logo">
-          <%= link_to root_path do %>
-            <%= image_tag "logo.png", style:'width:150px;'%>
-          <% end %>
-        </div>
-        <div class="contact-btn-div">
-          <div class="contact-btn">
-            <a href="mailto:sophieleleu@mac.com">contactez</a>
-          </div>
-        </div>
+<% content_for :nav, render('components/navhome') %>
+<div class="container">
+  <div class="grid">
+    <div class="photo">
+      <%= image_tag 'brode2.png' %>
+    </div>
+      <%= inline_svg_tag '53.svg', class:'star star1' %>
+      <%= inline_svg_tag '53.svg', class:'starout star2' %>
+      <%= inline_svg_tag '53.svg', class:'starout star3' %>
+      <%= inline_svg_tag '53.svg', class:'star star4' %>
+    <div class="home-nav">
+      <%= inline_svg_tag '5.svg', class:'swiggy-one' %>
+      <ul>
+        <li class="home-nav-item">
+          <%= link_to "Broderie", "/broderie", class: "home-nav-link" %>
+        </li>
+        <li class="home-nav-item">
+          <%= link_to "Tapisserie", "/tapisserie", class: "home-nav-link-alt" %>
+        </li>
+        <li class="home-nav-item">
+          <%= link_to "A Propos", "/apropos", class: "home-nav-link" %>
+        </li>
+        <li class="home-nav-item">
+          <%= link_to "Contact", "/contact", class: "home-nav-link-alt" %>
+        </li>
+      </ul>
+      <%= inline_svg_tag '5.svg', class:'swiggy' %>
     </div>
   </div>
-  <nav>
-    <ul class="group">
-      <li class="active"><%= link_to 'a propos', '/apropos'%></li>
-      <li class="active"><%= link_to 'broderie', '/broderie' %></li>
-      <li class="active"><%= link_to 'tapisserie', '/tapisserie' %></li>
-      <li class="active"><%= link_to 'contact', '/contact'%></li>
-    </ul>
-  </nav>
-  <section id="main-content">
-    <div id="guts">
-      <%= image_tag 'https://i.etsystatic.com/8224404/r/il/b1e946/1617053122/il_1588xN.1617053122_pjlv.jpg', class:'banner'%>
-      <div class="container">
-        <div class="home-page">
-          <div class="broderie">
-            <%= image_tag 'broderie.PNG' %>
-            <div class="text">
-              <p> La broderie permet de de transformer artistiquement une matière, de se l'approprier en y ajoutant un nom ou un logo, mais surtout de créer des tableaux et dessins là où on ne les attend pas forcément. J’ai toujours brodé, manuellement puis plus récemment en utilisant une machine professionnelle. </p>
-            </div>
-          </div>
-          <div class="tapisserie">
-            <p>J’adore relooker des fauteuils anciens pour leur donner un air plus chaleureux, accueillants et surtout confortables. La palette de choix est immense, tant au niveau de la restauration du bois que du choix des tissus. C’est un procédé un peu long mais le résultat final est vraiment satisfaisant.</p>
-            <%= image_tag 'https://i.pinimg.com/564x/2b/21/7c/2b217ca1fb8cdf118398f15f1ebd9467.jpg'  %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </div>
-

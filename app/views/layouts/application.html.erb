@@ -14,6 +14,12 @@
   </head>
 
   <body>
+    <% if content_for? :nav %>
+      <%= content_for :nav %>
+    <% else %>
+      <%= render 'components/navbar' %>
+    <% end %>
+    <%= render partial:'shared/leftnav' %>
     <%= yield %>
   </body>
 </html>
