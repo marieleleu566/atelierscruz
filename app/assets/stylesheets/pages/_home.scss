@@ -2,6 +2,10 @@
 body {
   background-color: #F7FAFE;
   position: relative;
+  p {
+    font-family: 'Roboto';
+    letter-spacing: 7%;
+  }
 }
 
 .photo {
@@ -49,9 +53,9 @@ body {
     padding-right: 100px;
     &:hover {
       color: #FFFFFF;
-      text-shadow: 4px 4px 0px #1F3489;
+      text-shadow: 4px 4px 0px #8AB7FC;
       -webkit-text-stroke: 2px white;
-     -webkit-text-fill-color: #1F3489;
+     -webkit-text-fill-color: #8AB7FC;
       text-decoration: none;
     }
 }
@@ -73,8 +77,8 @@ body {
      &:hover {
       text-decoration: none;
       color: #FFFFFF;
-    text-shadow: 4px 4px 0px #1F3489;
-    -webkit-text-stroke: 2px #1F3489;
+    text-shadow: 4px 4px 0px #8AB7FC;
+    -webkit-text-stroke: 2px #8AB7FC;
     -webkit-text-fill-color: white;
     }
 }
