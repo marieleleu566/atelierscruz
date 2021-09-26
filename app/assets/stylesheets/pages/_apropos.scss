@@ -8,11 +8,25 @@
 .about-photo {
   img {
     height:400px;
-    float: left;
-    padding: 0px 20px 0px 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  @include from-medium-high {
+    margin-right: 20px;
+    margin-bottom: 0px;
   }
 }
 
 .about-section {
-  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  @include from-medium-high {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  }
 }
+
