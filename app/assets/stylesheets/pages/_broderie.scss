@@ -6,6 +6,10 @@
 .image {
   float: left;
   margin-right: 20px;
+  min-width: 350px;
+  @include from-medium-high {
+    min-width: 600px;
+  }
 }
 
 .image2 {
@@ -26,8 +30,18 @@
   }
 }
 
-.video {
-  margin-bottom: 20px;
+.broderie {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include from-medium-high {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .brodbottom {
@@ -47,6 +61,27 @@
     align-items: center;
     flex-direction: row;
   }
+}
+
+.tarif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  ul {
+    margin-right: 30px;
+  }
+  @include from-medium-high {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.gallery-grid {
+  display: flex;
+  width: 600px;
 }
 
 .howto {
