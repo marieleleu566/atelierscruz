@@ -6,3 +6,19 @@
     font-family: 'Raleway';
   }
 }
+
+.contact-page {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a:hover {
+    color: #1F3489;
+  }
+  a {
+    color:  #8AB7FC;
+  }
+  @include from-medium-high {
+    padding: 0px 150px 0px 150px;
+  }
+}
