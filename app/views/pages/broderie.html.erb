@@ -25,37 +25,59 @@
         </video>
       </div>
     </div>
-    <div class="gallery">
-      <ul>
-        <li>
-          <figure class="large">
-            <div><%= image_tag 'nai.jpeg', class:'span_1', width:'100%' %></div>
-            <article><figcaption><p>Torchon de cuisine un motif</p></figcaption></article>
-          </figure>
-          <figure>
-            <div><%= image_tag 'heart.jpeg', class:'span_2', width:'100%' %></div>
-            <article><figcaption><p>Lingettes démaquillantes double faces coton bio/liberty avec ou sans pochettes de rangement</p></figcaption></article>
-          </figure>
-          <figure>
-            <div><%= image_tag 'cruz.jpeg', class:'span_3', width:'100%' %></div>
-            <article><figcaption><p>Motif logo monté dans un cadre tambour pour déco murale</p></figcaption></article>
-          </figure>
-          <figure>
-            <div><%= image_tag 'dog.jpeg', class:'span_1', width:'100%' %></div>
-            <article><figcaption><p>Bavoir de bébé motif et prénom</p></figcaption></article>
-          </figure>
-          <figure>
-            <div><%= image_tag 'k.jpeg', class:'span_2', width:'100%' %></div>
-            <article><figcaption><p>Broderie de coussin motif et Monogramme</p></figcaption></article>
-          </figure>
-          <figure>
-            <div><%= image_tag 'louise1.jpeg', class:'span_3', width:'100%' %></div>
-            <article><figcaption><p>Prenom de bébé monté dans un cadre tambour pour déco murale</p></figcaption></article>
-          </figure>
-        </li>
-      </ul>
-    </div>
+    <div class="centerslide">
+          <div class="card-scroller">
+            <div class="card">
+              <%= image_tag 'nai.jpeg', class:'imagescroll', height:'300px' %>
+                <div class="text">
+                  <div class="t"><p>Torchon de cuisine un motif</p></div>
+                </div>
+            </div>
+            <div class="card">
+
+              <%= image_tag 'heart.jpeg', class:'imagescroll', height:'300px' %>
+                <div class="text">
+                  <div class="t"><p>Lingettes démaquillantes double faces coton bio/liberty avec ou sans pochettes de rangement</p></div>
+                </div>
+            </div>
+            <div class="card">
+
+              <%= image_tag 'cruz.jpeg', class:'imagescroll', height:'300px' %>
+                <div class="text">
+                  <div class="t"><p>Motif logo monté dans un cadre tambour pour déco murale</p></div>
+                </div>
+            </div>
+            <div class="card">
+
+              <%= image_tag 'k.jpeg', class:'imagescroll', height:'300px' %>
+                <div class="text">
+                  <div class="t"><p>Broderie de coussin motif et Monogramme</p></div>
+                </div>
+            </div>
+            <div class="card">
+
+              <%= image_tag 'louise1.jpeg', class:'imagescroll', height:'300px' %>
+                <div class="text">
+                  <div class="t"><p>Prenom de bébé monté dans un cadre tambour pour déco murale</p></div>
+                </div>
+            </div>
+            <div class="card">
+
+              <%= image_tag 'hat.jpeg', class:'imagescroll', height:'300px' %>
+                <div class="text">
+                  <div class="t"><p>Casquette blanche avec motif</p></div>
+                </div>
+            </div>
+          </div>
+        </div>
   </div>
 </div>
+
+<script>
+function hoverImage(x) {
+ x = document.querySelector('.text')
+ x.style.visibility = 'visible';
+}
+</script>
 
 
